@@ -1,0 +1,88 @@
+body {
+    background-color: #000080; /* Dark blue background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.frame {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px; /* Add some space below the frame */
+}
+.frame1-img {
+    width: 512px;
+    height: 512px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 10px 0;
+}
+
+.custom-file-upload:hover {
+    background-color: gold;
+    transform: scale(1.05);
+}
+
+.custom-file-upload:active {
+    transform: scale(1);
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+#file-name {
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 10px 0;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: gold;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+canvas {
+    width: 512px;
+    height: 512px;
+    border: 1px solid #ddd;
+}
